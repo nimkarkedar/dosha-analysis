@@ -713,7 +713,7 @@
                     <input type="number" id="age" placeholder="Enter your age" min="1" max="120" required>
                     <div class="error-message">Please enter your age</div>
                 </div>
-            </div>
+                </div>
         </div>
 
         <!-- Quiz Table -->
@@ -971,16 +971,16 @@
         <div class="results-section">
             <h2>Your Dosha Results</h2>
             <div class="score-grid">
-                <div class="score-card">
-                    <h3></h3>
+                <div class="score-card vata">
+                    <h3 class="dosha-label-pill">VATA</h3>
                     <div class="score-value" id="vata-score">0</div>
                 </div>
-                <div class="score-card">
-                    <h3></h3>
+                <div class="score-card pitta">
+                    <h3 class="dosha-label-pill">PITTA</h3>
                     <div class="score-value" id="pitta-score">0</div>
                 </div>
-                <div class="score-card">
-                    <h3></h3>
+                <div class="score-card kapha">
+                    <h3 class="dosha-label-pill">KAPHA</h3>
                     <div class="score-value" id="kapha-score">0</div>
                 </div>
             </div>
@@ -1039,9 +1039,7 @@
         let quizResults = {
             name: '',
             gender: '',
-            age: '',
-            email: '',
-            vataScore: 0,
+            age: '',            vataScore: 0,
             pittaScore: 0,
             kaphaScore: 0,
             dominantDosha: '',
@@ -1265,9 +1263,7 @@
             quizResults = {
                 name: document.getElementById('name').value.trim(),
                 gender: document.getElementById('gender').value,
-                age: document.getElementById('age').value,
-                email: document.getElementById('email').value.trim(),
-                vataScore: vataScore,
+                age: document.getElementById('age').value,                vataScore: vataScore,
                 pittaScore: pittaScore,
                 kaphaScore: kaphaScore,
                 dominantDosha: scores[0].name,
@@ -1583,4 +1579,3 @@
 
 </body>
 </html>
-
